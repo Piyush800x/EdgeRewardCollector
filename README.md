@@ -18,6 +18,8 @@ Edge browser must be fullscreened.
 
 You must not control your mouse during the task.
 
+Removing history of recent search is fully optional but recomended.
+
 ## Developers
 This is just a automated stuff in python, if you want to make this project better feel free to fork it and i feel glad to merge your contribution on this.
 
