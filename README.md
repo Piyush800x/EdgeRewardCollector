@@ -11,6 +11,7 @@ I craeted this program just to collect rewards. In my free time i developed that
 
 ## How to run
 Just download `installer.exe` and install this. After installing run the `rewardcollector.exe` to run.
+Grab a licence key from `licences.txt` file and use this application.
 
 ## Requirements
 Edge browser must be fullscreened.
