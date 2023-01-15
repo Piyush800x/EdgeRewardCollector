@@ -13,6 +13,7 @@ from keys import verify_key, checkforupdate_list, local_list
 from win32api import GetSystemMetrics
 import psutil
 import subprocess
+from datetime import datetime
 
 
 width, height = GetSystemMetrics(0), GetSystemMetrics(1)
@@ -56,7 +57,7 @@ class Activation:
         btn1.pack()
 
         btn2: Button = Button(self.root, text="Purchase", command=lambda:
-        webbrowser.open("https://pmny.in/9JH0a0iKaok1"))
+        webbrowser.open("https://discord.gg/YFkwJkU2px"))
         btn2.pack()
         messagebox.showinfo("Reward Collector", "Licence format must be XXXX-XXXX-XXXX-XXXX-XXXX")
 
@@ -68,6 +69,7 @@ class Activation:
             dic = {
                 "uuid": subprocess.check_output('wmic csproduct get uuid').decode().split('\n')[1].strip(),
                 "licence": lisense,
+                "date": datetime.utcnow().date()
             }
             data.insert_one(dic)
             messagebox.showinfo("Reward Collector", "Licence has successfully activated.\nRestarting application.")
