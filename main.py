@@ -69,7 +69,7 @@ class Activation:
             dic = {
                 "uuid": subprocess.check_output('wmic csproduct get uuid').decode().split('\n')[1].strip(),
                 "licence": lisense,
-                "date": datetime.utcnow().date()
+                "date": f"{datetime.today()}"
             }
             data.insert_one(dic)
             messagebox.showinfo("Reward Collector", "Licence has successfully activated.\nRestarting application.")
